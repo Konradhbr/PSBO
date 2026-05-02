@@ -52,13 +52,20 @@ body {
    Variales Start
 **********************************************************/
 :root {
+    --white: #F5F7FA;
+    --pure-white: #FFFFFF;
 
-    /* Theme Colors */
-    --black: #000;
-    --white: #fff;
-    --red: #ef1212;
+    --black: #0D0D0D;
+    --black-light: #1A1A1A;
 
-    /* Theme Fonts */
+    --navy: #0B1F3A;
+    --navy-light: #132F52;
+
+    --red: #D62828;
+    --red-light: #E63946;
+
+    --gray: #E5E7EB;
+
     --font-family-1: 'Oswald', sans-serif;
 }
 
@@ -102,6 +109,17 @@ button {
     text-transform: uppercase;
     border: 2px solid var(--white);
     color: var(--white);
+
+    /*border: 2px solid var(--black);*/
+    /*cursor: pointer;*/
+    /*font-weight: 500;*/
+    /*letter-spacing: 1.1px;*/
+    /*transition: all .3s linear;*/
+    /*font-family: var(--font-family-1);*/
+    /*font-size: 1.4rem;*/
+    /*padding: 1.2rem 2.2rem;*/
+    /*text-transform: uppercase;*/
+    /*color: var(--black);*/
 }
 
 
@@ -154,12 +172,16 @@ p {
 
 
 /**********************************************************
-    Header Start 
+    Header Start
 **********************************************************/
-header {
+header{
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(-219deg, rgba(0, 0, 0, 0.788) 12%, rgba(255, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.13)70%), url("../assets/images/hero-1.jpg");
+    background-image: linear-gradient(-219deg,
+    rgba(13, 13, 13, 0.85) 20%,
+    rgba(11, 31, 58, 0.75) 60%,
+    rgba(13, 13, 13, 0.4) 100%),
+    url("../assets/images/hero-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,7 +189,7 @@ header {
 }
 
 /**********************************************************
-    Nav Start 
+    Nav Start
 **********************************************************/
 nav {
     width: 100%;
@@ -187,6 +209,7 @@ nav {
 .logo-box h2 {
     font-size: 2.5rem;
     margin-left: .7rem;
+    -webkit-text-stroke: 0.5px var(--red-light)
 }
 
 /**********************************************************
@@ -200,7 +223,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 1.1px;
-    color: var(--white);
+    color: var(--pure-white);
 }
 
 @media (hover:hover) {
@@ -239,7 +262,7 @@ nav {
 
 #hero-text h2 {
     font-size: 4.5rem;
-    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-stroke: 1px var(--pure-white);
     -webkit-text-fill-color: transparent;
 }
 
@@ -247,6 +270,11 @@ nav {
     font-size: 9rem;
     word-spacing: 8px;
     margin: -1.5rem 0 1.5rem;
+    color: var(--pure-white);
+}
+
+.hero-btn {
+    margin-top: 15px;
 }
 
 /**********************************************************
@@ -280,7 +308,8 @@ nav {
 }
 
 .training-box:last-child {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.306), rgba(0, 0, 0, 0.584)), url("../assets/images/hero-card-2.jpg");
+    background-image: linear-gradient(rgba(13,13,13,0.4), rgba(13,13,13,0.6)),
+    url("../assets/images/hero-card-2.jpg");
 }
 
 .training-box h2,
@@ -295,6 +324,11 @@ nav {
     padding: 1rem 4rem;
     margin-top: 2rem;
 }
+
+.training-box .training-btn:hover {
+    background-color: var(--navy);
+}
+
 
 @media (hover:hover) {
     .training-box .training-btn:hover {
@@ -375,7 +409,10 @@ nav {
     top: 0;
     left: 0;
     background: var(--black);
-    background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(255, 0, 0, 0.696));
+    background: linear-gradient(
+            rgba(13, 13, 13, 0.6),
+            rgb(71 104 156 / 0.6)
+    );
     display: flex;
     align-items: flex-end;
     padding: 5rem;
@@ -546,7 +583,11 @@ nav {
 **********************************************************/
 .footer-banner {
     height: 60rem;
-    background-image: linear-gradient(-219deg, rgba(0, 0, 0, 0.788) 17%, rgba(255, 0, 0, 0.82) 74%, rgba(0, 0, 0, 0.13)75%), url("../assets/images/footer-banner.jpg");
+    background-image: linear-gradient(-219deg,
+    rgba(13,13,13,0.85),
+    rgba(11,31,58,0.7),
+    rgba(13,13,13,0.4)),
+    url("../assets/images/footer-banner.jpg");
     background-size: cover;
     background-position: top;
     margin-top: 5rem;
@@ -611,6 +652,7 @@ nav {
 .contact-info p {
     font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 /**********************************************************
