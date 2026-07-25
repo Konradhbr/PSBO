@@ -346,14 +346,25 @@ nav {
 **********************************************************/
 .offer-boxes-container {
     gap: 5rem;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the items horizontally */
 }
 
 .offer-box {
-    flex: 1;
+    flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+    width: 30rem; /* Set a fixed width for the offer box */
     text-align: center;
+    padding: 2rem; /* Add some padding inside the box */
+    border: 1px solid var(--gray); /* Optional: add a border for visual separation */
+    border-radius: 8px; /* Optional: rounded corners */
+    margin-bottom: 2rem; /* Add margin between rows */
 }
 
 .offer-box img {
+    width: 20rem; /* Set a fixed width for the image */
+    height: 26rem; /* Set a fixed height for the image */
+    border-radius: 8px; /* Added delicate rounded corners */
+    object-fit: cover; /* Ensure the entire image is visible */
     margin-bottom: 2rem;
     transition: all .3s linear;
     cursor: pointer;
@@ -365,8 +376,207 @@ nav {
     }
 }
 
+.offer-box h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.offer-box h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    width: 100%; /* Ensure rows take full width */
+    flex-wrap: wrap;
+}
+
 /**********************************************************
     Offers Section End
+**********************************************************/
+
+
+/**********************************************************
+    Partner Program Section Start
+**********************************************************/
+#partner-program-section {
+    text-align: center;
+}
+
+#partner-program-section .section-heading {
+    margin-bottom: 1rem;
+}
+
+#partner-program-section .section-sub-heading {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: var(--red);
+}
+
+#partner-program-section .program-intro-text {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--pure-white);
+}
+
+#partner-program-section .program-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    color: var(--white);
+    text-transform: none; /* Override uppercase for better readability */
+}
+
+#partner-program-section .program-highlight {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--red-light);
+    margin-bottom: 1rem;
+}
+
+#partner-program-section .program-sub-heading {
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    color: var(--pure-white);
+}
+
+#partner-program-section .partner-list,
+#partner-program-section .feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2rem;
+    max-width: 80rem;
+    text-align: left;
+}
+
+#partner-program-section .partner-list li,
+#partner-program-section .feature-list li {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+    color: var(--white);
+    text-transform: none; /* Override uppercase for better readability */
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+#partner-program-section .partner-list li::before,
+#partner-program-section .feature-list li::before {
+    content: '•'; /* Bullet point */
+    color: var(--red);
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#partner-program-section .feature-list.checkmark-list li::before {
+    content: '✔'; /* Checkmark */
+    color: var(--red);
+    font-size: 1.8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#partner-program-section .cost-section {
+    background-color: var(--black-light);
+    padding: 2.5rem;
+    border-radius: 8px;
+    margin: 3rem auto;
+    max-width: 70rem;
+}
+
+#partner-program-section .cost-section p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: none; /* Override uppercase for better readability */
+}
+
+#partner-program-section .cost-section strong {
+    color: var(--red);
+}
+
+#partner-program-section .section-divider {
+    border: none;
+    border-top: 1px solid var(--gray);
+    margin: 5rem auto;
+    width: 50%;
+}
+
+#partner-program-section .program-feature {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#partner-program-section .program-feature p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-transform: none; /* Override uppercase for better readability */
+}
+
+#partner-program-section .program-summary {
+    background-color: var(--navy-light);
+    padding: 3rem;
+    border-radius: 8px;
+    margin-top: 5rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#partner-program-section .program-summary p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-transform: none; /* Override uppercase for better readability */
+}
+
+#partner-program-section .program-summary .program-highlight {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/**********************************************************
+    Partner Program Section End
+**********************************************************/
+
+
+/**********************************************************
+    Google Map Section Start
+**********************************************************/
+#map-section {
+    text-align: center;
+    padding-top: 5rem; /* Add some padding to separate from previous section */
+}
+
+#map-section .section-heading {
+    margin-bottom: 3rem;
+}
+
+.map-container {
+    max-width: 100rem; /* Limit the width of the map container */
+    margin: 0 auto; /* Center the map container */
+    border-radius: 8px; /* Add some rounded corners to the map */
+    overflow: hidden; /* Hide any overflow from rounded corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.map-container iframe {
+    border-radius: 8px; /* Apply border-radius to the iframe as well */
+}
+/**********************************************************
+    Google Map Section End
 **********************************************************/
 
 
@@ -714,7 +924,7 @@ footer ul li a {
 @media (hover:hover) {
     footer .social-media-icons a:hover {
         color: var(--black);
-        cursor: pointer;
+        background-color: var(--white);
     }
 }
 
