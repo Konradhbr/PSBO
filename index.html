@@ -31,10 +31,17 @@
                     <ul class="d-flex">
                         <li><a href="#home">Strona główna</a></li>
                         <li><a href="#about-section">Zespół</a></li>
-                        <!-- <li><a href="#our-mission">Nasza misja</a></li> -->
-                        <!-- <li><a href="#cooperation-section">Współpraca</a></li> -->
-                        <li><a href="#partner-program-section">Program Partnerski</a></li>
-                        <!-- <li><a href="#payments-section">Płatności</a></li> -->
+                        <li class="nav-dropdown">
+                            <a href="#" class="dropdown-toggle">Nasza misja <i class="fa fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="partnerstwo.html">Program Partnerski</a></li>
+                                <li><a href="bezpieczny-student.html">Bezpieczny Uczeń – Bezpieczna Gmina</a></li>
+                                <li><a href="akademia.html">Akademia Bezpieczeństwa Osobistego</a></li>
+                                <li><a href="#">Szkolenia Instruktorskie</a></li>
+                                <li><a href="#">Turnieje Krajowe i Międzynarodowe</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#home" target="_blank" rel="noopener">Sklep</a></li>
                         <li><a href="#contact-section">Kontakt</a></li>
                     </ul>
                 </div>
@@ -46,16 +53,15 @@
             <div id="hero-text" class="max-width-center d-flex flex-d-col align-start justify-center">
                 <h3 style="font-size: 30px">Treningi dla dzieci, młodzieży i dorosłych</h3>
                 <h2 style="font-size: 40px">Bezpieczeństwo zaczyna się od Ciebie</h2>
-                <a href="#partner-program-section" class="hero-btn transparent-btn">Dołącz do nas</a>
+                <a href="partnerstwo.html" class="hero-btn transparent-btn">Dołącz do nas</a>
             </div>
         </header>
         <section id="about-section" class="max-width-center  section-block-padding">
             <h1 class="section-heading">Nasz zespół</h1>
             <h2 class="section-sub-heading">Za sukcesem Polskiego Stowarzyszenia Bezpieczeństwa Osobistego stoi zespół ludzi, których łączy wspólna misja – promowanie bezpieczeństwa osobistego, aktywności fizycznej oraz edukacji dzieci, młodzieży i dorosłych. Naszą siłą są doświadczenie, profesjonalizm oraz zaangażowanie w budowanie świadomego i bezpiecznego społeczeństwa.</h2>
-            <div class="offer-boxes-container d-flex justify-between">
-                <div class="row">
+            <div class="offer-boxes-container">
                 <div class="offer-box">
-                    <img src="assets/images/jacek.jpg" alt="PREZES Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
+                    <img src="assets/images/team/jacek.jpg" alt="PREZES Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
                     <h2>Jacek Błasiński</h2>
                     <h3>Prezes Stowarzyszenia
                     </h3>
@@ -67,7 +73,7 @@
                 </p>
                 </div>
                 <div class="offer-box">
-                    <img src="assets/images/krystian.jpg" alt="WICEPREZES Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
+                    <img src="assets/images/team/krystian.jpg" alt="WICEPREZES Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
                     <h2>Krystian Filipek</h2>
                     <h3>Wiceprezes Stowarzyszenia • Instruktor Samoobrony • Instruktor Karate</h3>
                     <p>Wiceprezes Polskiego Stowarzyszenia Bezpieczeństwa Osobistego, instruktor karate oraz certyfikowany instruktor samoobrony i taktyk interwencyjnych. Od wielu lat prowadzi szkolenia dla dzieci, młodzieży i dorosłych, łącząc doświadczenie sportowe z praktycznym podejściem do bezpieczeństwa.</p>
@@ -76,18 +82,15 @@
 
                 </div>
                 <div class="offer-box">
-                    <img src="assets/images/monika.png" alt="SEKRETARZ GENERALNY Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
+                    <img src="assets/images/team/monika.png" alt="SEKRETARZ GENERALNY Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
                     <h2>Monika Grudniak</h2>
                     <h3>Skarbnik • Księgowa • Sekretarz
                     </h3>
                     <p>Skarbnik, księgowa oraz sekretarz Polskiego Stowarzyszenia Bezpieczeństwa Osobistego. Posiada wieloletnie doświadczenie zawodowe zdobyte w branży deweloperskiej, gdzie odpowiadała za prowadzenie spraw finansowych i administracyjnych.</p>
                     <p>W stowarzyszeniu czuwa nad prawidłowym funkcjonowaniem finansów, dokumentacji oraz organizacją pracy biura. Jej dokładność, odpowiedzialność i profesjonalizm stanowią ważny filar działalności organizacji.</p>
                 </div>
-                </div>
-                <div class="row">
-
                 <div class="offer-box">
-                    <img src="assets/images/juia.jpg" alt="Instruktorka Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
+                    <img src="assets/images/team/juia.jpg" alt="Instruktorka Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
                     <h2>Julia Kuczyńska</h2>
                     <h3>Instruktor Samoobrony • Grafik • Instruktor Tańca
                     </h3>
@@ -95,238 +98,88 @@
                     <p>Posiada wieloletnie doświadczenie w pracy z dziećmi i młodzieżą jako wychowawca oraz animator. W stowarzyszeniu odpowiada również za przygotowywanie materiałów graficznych oraz wspiera działania promocyjne.</p>
                 </div>
                 <div class="offer-box">
-                    <img src="assets/images/majka.jpg" alt="Instruktorka oraz animatorka Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
+                    <img src="assets/images/team/majka.jpg" alt="Instruktorka oraz animatorka Polskiego Stowarzyszenia Bezpieczeństwa Osobistego">
                     <h2>Majka Majewska</h2>
                     <h3>Instruktor Samoobrony • Animator Dzieci i Młodzieży
                     </h3>
                     <p>Instruktor samoobrony oraz animator czasu wolnego z wieloletnim doświadczeniem w pracy z dziećmi i młodzieżą. Prowadzi zajęcia sportowe, rekreacyjne i edukacyjne, dbając o rozwój, bezpieczeństwo oraz dobrą atmosferę.</p>
                     <p>W swojej pracy stawia na indywidualne podejście, budowanie pewności siebie oraz rozwijanie aktywności fizycznej wśród najmłodszych.</p>
                 </div>
-                </div>
             </div>
         </section>
 
-        <section id="partner-program-section" class="max-width-center section-block-padding">
-            <h1 class="section-heading">PROGRAM PARTNERSKI</h1>
-            <h2 class="section-sub-heading">Polskiego Stowarzyszenia Bezpieczeństwa Osobistego</h2>
-
-            <div class="program-intro">
-                <p class="program-intro-text">Rozwijamy kluby sportów walki</p>
-                <p class="program-text">Polskie Stowarzyszenie Bezpieczeństwa Osobistego powstało z myślą o klubach sportów i sztuk walki, które chcą rozwijać się szybciej, zwiększać liczbę zawodników, podnosić kwalifikacje trenerów oraz otwierać swoim zawodnikom drogę do krajowej i międzynarodowej kariery sportowej.</p>
-
-                <p class="program-highlight">Program Partnerski PSBO to nie kolejna licencja.</p>
-                <p class="program-highlight">To kompleksowy system rozwoju klubu.</p>
-            </div>
-
-            <div class="program-section-content">
-                <h3 class="program-sub-heading">Partnerstwo obejmuje wsparcie w zakresie:</h3>
-                <ul class="partner-list">
-                    <li><i class="fas fa-check-circle"></i> rozwoju klubu,</li>
-                    <li><i class="fas fa-check-circle"></i> marketingu,</li>
-                    <li><i class="fas fa-check-circle"></i> pozyskiwania nowych zawodników,</li>
-                    <li><i class="fas fa-check-circle"></i> rozwoju trenerów,</li>
-                    <li><i class="fas fa-check-circle"></i> organizacji egzaminów,</li>
-                    <li><i class="fas fa-check-circle"></i> prowadzenia projektów szkolnych,</li>
-                    <li><i class="fas fa-check-circle"></i> pozyskiwania sponsorów,</li>
-                    <li><i class="fas fa-check-circle"></i> wyjazdów krajowych i zagranicznych,</li>
-                    <li><i class="fas fa-check-circle"></i> współpracy z międzynarodowymi federacjami.</li>
-                </ul>
-
-                <div class="cost-section">
-                    <h3 class="program-sub-heading">Koszt partnerstwa</h3>
-                    <p>Pierwszy rok współpracy: <strong>1500 zł</strong></p>
-                    <p>Odnowienie partnerstwa od drugiego roku: <strong>500 zł rocznie</strong></p>
-                    <p>Naszym celem jest, aby partnerstwo było inwestycją, która zwróci się klubowi wielokrotnie poprzez rozwój działalności oraz nowe źródła przychodów.</p>
+        <section id="gallery-section" class="max-width-center section-block-padding">
+            <h1 class="section-heading">Galeria</h1>
+            <h2 class="section-sub-heading">Zobacz nas w akcji – treningi, wydarzenia oraz chwile, które budują naszą wspólnotę.</h2>
+            <div class="gallery-row gallery-row-1">
+                <div class="gallery-box" data-event="Letnie Zgrupowanie Karate nad Jeziorem Firlej 2026" data-title="Letnie Zgrupowanie Karate nad Jeziorem Firlej 2026" data-images="assets/images/gallery/1.jpg,assets/images/gallery/2.jpg,assets/images/gallery/3.jpg,assets/images/gallery/4.jpg,assets/images/gallery/5.jpg,assets/images/gallery/6.jpg,assets/images/gallery/7.jpg,assets/images/gallery/8.jpg,assets/images/gallery/9.jpg,assets/images/gallery/10.jpg">
+                    <img src="assets/images/gallery/1.jpg" alt="Zdjęcie z letniego Zgrupowania Karate nad Jeziorem Firlej 2026">
+                    <div class="gallery-box-overlay">
+                        <h2>Letnie Zgrupowanie Karate nad Jeziorem Firlej 2026</h2>
+                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>
+                    </div>
                 </div>
-
-                <hr class="section-divider">
-
-                <div class="program-features-grid">
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">1. Rozwój klubu</h3>
-                        <p>Pomagamy klubom:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> zwiększać liczbę zawodników,</li>
-                            <li><i class="fas fa-star"></i> organizować skuteczne nabory,</li>
-                            <li><i class="fas fa-star"></i> otwierać nowe grupy treningowe,</li>
-                            <li><i class="fas fa-star"></i> wdrażać nowe specjalizacje,</li>
-                            <li><i class="fas fa-star"></i> rozwijać działalność sportową i biznesową.</li>
-                        </ul>
-                        <p>Partnerzy otrzymują dostęp do sprawdzonych rozwiązań, które stosujemy we własnych projektach.</p>
+                <div class="gallery-box" data-event="MISTRZOSTWA EUROPY W ANGLII" data-title="MISTRZOSTWA EUROPY W ANGLII" data-images="assets/images/gallery/11.jpg,assets/images/gallery/12.jpg,assets/images/gallery/13.jpg,assets/images/gallery/14.jpg,assets/images/gallery/15.jpg,assets/images/gallery/16.jpg,assets/images/gallery/17.jpg,assets/images/gallery/18.jpg,assets/images/gallery/19.jpg,assets/images/gallery/20.jpg">
+                    <img src="assets/images/gallery/11.jpg" alt="Zdjęcie z Mistrzostw Europy w Anglii">
+                    <div class="gallery-box-overlay">
+                        <h2>MISTRZOSTWA EUROPY W ANGLII</h2>
+                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>
                     </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">2. Program „Bezpieczny Uczeń – Bezpieczna Gmina”</h3>
-                        <p>Partnerzy otrzymują pełne know-how programu.</p>
-                        <p>W ramach współpracy przekazujemy:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> gotowe scenariusze zajęć,</li>
-                            <li><i class="fas fa-star"></i> materiały szkoleniowe,</li>
-                            <li><i class="fas fa-star"></i> sposób prowadzenia programu,</li>
-                            <li><i class="fas fa-star"></i> wzory dokumentów,</li>
-                            <li><i class="fas fa-star"></i> wskazówki dotyczące współpracy ze szkołami i samorządami.</li>
-                        </ul>
-                        <p>Program pozwala prowadzić szkolenia w szkołach podstawowych i średnich, budować rozpoznawalność klubu oraz pozyskiwać nowych zawodników.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">3. Szkolenia instruktorskie</h3>
-                        <p>Kluby partnerskie korzystają z preferencyjnych cen szkoleń instruktorskich.</p>
-                        <p>Specjalizacje:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> Kickboxing</li>
-                            <li><i class="fas fa-star"></i> Karate</li>
-                            <li><i class="fas fa-star"></i> Krav Maga</li>
-                            <li><i class="fas fa-star"></i> Samoobrona</li>
-                            <li><i class="fas fa-star"></i> Boks</li>
-                            <li><i class="fas fa-star"></i> Muay Thai</li>
-                            <li><i class="fas fa-star"></i> Techniki interwencyjne</li>
-                        </ul>
-                        <p>Cena partnerska: <strong>450 zł</strong></p>
-                        <p>Cena standardowa: <strong>800–1500 zł</strong></p>
-                        <p>Dzięki temu klub może rozszerzyć ofertę i uruchomić nowe grupy treningowe.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">4. Egzaminy kickboxingu</h3>
-                        <p>Partnerzy otrzymują:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> program egzaminacyjny,</li>
-                            <li><i class="fas fa-star"></i> wymagania na stopnie,</li>
-                            <li><i class="fas fa-star"></i> możliwość organizacji egzaminów zgodnie z obowiązującymi zasadami w ramach współpracujących struktur.</li>
-                        </ul>
-                        <p>Dobrze zorganizowane egzaminy mogą stanowić dodatkowe źródło przychodu dla klubu.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">5. Rozwój zawodników</h3>
-                        <p>Partnerzy mogą zgłaszać swoich zawodników do struktur współpracujących federacji zgodnie z obowiązującymi zasadami kwalifikacji.</p>
-                        <p>Organizujemy:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> konsultacje kadry,</li>
-                            <li><i class="fas fa-star"></i> zgrupowania,</li>
-                            <li><i class="fas fa-star"></i> seminaria,</li>
-                            <li><i class="fas fa-star"></i> wyjazdy szkoleniowe.</li>
-                        </ul>
-                        <p>Najlepsi zawodnicy mają możliwość dalszego rozwoju sportowego.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">6. Rozwój trenerów</h3>
-                        <p>Najbardziej zaangażowani trenerzy klubów partnerskich mogą być rekomendowani do pełnienia funkcji szkoleniowych w strukturach współpracujących organizacji, zgodnie z obowiązującymi procedurami i potrzebami tych organizacji.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">7. Starty międzynarodowe</h3>
-                        <p>Organizujemy wyjazdy na:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> Mistrzostwa Świata,</li>
-                            <li><i class="fas fa-star"></i> Mistrzostwa Europy,</li>
-                            <li><i class="fas fa-star"></i> Arnold Sports UK,</li>
-                            <li><i class="fas fa-star"></i> turnieje rankingowe,</li>
-                            <li><i class="fas fa-star"></i> seminaria międzynarodowe,</li>
-                            <li><i class="fas fa-star"></i> zgrupowania szkoleniowe.</li>
-                        </ul>
-                        <p>Partnerzy otrzymują pierwszeństwo informacji oraz wsparcie organizacyjne.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">8. Seminaria</h3>
-                        <p>Kluby partnerskie otrzymują:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> pierwszeństwo zapisów,</li>
-                            <li><i class="fas fa-star"></i> preferencyjne ceny,</li>
-                            <li><i class="fas fa-star"></i> możliwość organizacji seminariów u siebie,</li>
-                            <li><i class="fas fa-star"></i> wsparcie organizacyjne.</li>
-                        </ul>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">9. Marketing</h3>
-                        <p>Pomagamy rozwijać markę klubu.</p>
-                        <p>Oferujemy konsultacje dotyczące:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> Facebooka,</li>
-                            <li><i class="fas fa-star"></i> Instagrama,</li>
-                            <li><i class="fas fa-star"></i> Tik Toka,</li>
-                            <li><i class="fas fa-star"></i> reklam,</li>
-                            <li><i class="fas fa-star"></i> grafik,</li>
-                            <li><i class="fas fa-star"></i> plakatów,</li>
-                            <li><i class="fas fa-star"></i> materiałów promocyjnych,</li>
-                            <li><i class="fas fa-star"></i> kampanii naborowych.</li>
-                        </ul>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">10. Sponsorzy, granty i finansowanie</h3>
-                        <p>Uczymy jak:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> pozyskiwać sponsorów,</li>
-                            <li><i class="fas fa-star"></i> przygotowywać oferty sponsorskie,</li>
-                            <li><i class="fas fa-star"></i> zdobywać dotacje,</li>
-                            <li><i class="fas fa-star"></i> ubiegać się o granty,</li>
-                            <li><i class="fas fa-star"></i> przygotowywać wnioski do jednostek samorządowych,</li>
-                            <li><i class="fas fa-star"></i> starać się o stypendia sportowe.</li>
-                        </ul>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">11. Sprzęt sportowy</h3>
-                        <p>Dzięki współpracy z partnerami handlowymi kluby mogą korzystać z preferencyjnych warunków zakupu sprzętu sportowego i wyposażenia sal treningowych, zgodnie z aktualnymi warunkami współpracy.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">12. Promocja klubów partnerskich</h3>
-                        <p>Każdy klub partnerski otrzymuje:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> prezentację na stronie internetowej PSBO,</li>
-                            <li><i class="fas fa-star"></i> wpis na mapie klubów partnerskich,</li>
-                            <li><i class="fas fa-star"></i> możliwość promocji wydarzeń w kanałach PSBO zgodnie z regulaminem,</li>
-                            <li><i class="fas fa-star"></i> promocję sukcesów zawodników i trenerów.</li>
-                        </ul>
-                        <p>Co miesiąc wybieramy:</p>
-                        <p>🏆 <strong>Klub Miesiąca</strong></p>
-                        <p>🏆 <strong>Trenera Miesiąca</strong></p>
-                        <p>Najlepsi partnerzy są promowani w mediach społecznościowych PSBO.</p>
-                    </div>
-
-                    <div class="program-feature-card">
-                        <h3 class="program-sub-heading">13. Wyjazdy szkoleniowe</h3>
-                        <p>Organizujemy:</p>
-                        <ul class="feature-list">
-                            <li><i class="fas fa-star"></i> obozy letnie,</li>
-                            <li><i class="fas fa-star"></i> obozy zimowe,</li>
-                            <li><i class="fas fa-star"></i> wyjazdy szkoleniowe,</li>
-                            <li><i class="fas fa-star"></i> wyjazdy do Tajlandii,</li>
-                            <li><i class="fas fa-star"></i> zgrupowania kadry,</li>
-                            <li><i class="fas fa-star"></i> seminaria zagraniczne.</li>
-                        </ul>
+                </div>
+                <div class="gallery-box" data-event="Pokaz karate i obrony osobistej podczas Dnia Rodziny w Adamowie" data-title="Pokaz karate i obrony osobistej podczas Dnia Rodziny w Adamowie" data-images="assets/images/gallery/21.jpg,assets/images/gallery/22.jpg,assets/images/gallery/23.jpg,assets/images/gallery/24.jpg,assets/images/gallery/25.jpg">
+                    <img src="assets/images/gallery/16.jpg" alt="Zdjęcie z pokazu karate i obrony osobistej podczas Dnia Rodziny w Adamowie">
+                    <div class="gallery-box-overlay">
+                        <h2>Pokaz karate</h2>
+                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>
                     </div>
                 </div>
             </div>
-
-            <hr class="section-divider">
-
-            <div class="program-summary">
-                <h3 class="program-sub-heading">Dlaczego warto zostać Partnerem PSBO?</h3>
-                <p class="program-highlight">Partnerstwo z PSBO to nie koszt.</p>
-                <p class="program-highlight">To inwestycja w rozwój klubu.</p>
-                <p>Dzięki współpracy klub może:</p>
-                <ul class="feature-list checkmark-list">
-                    <li><i class="fas fa-check-circle"></i> zwiększyć liczbę zawodników,</li>
-                    <li><i class="fas fa-check-circle"></i> rozszerzyć ofertę,</li>
-                    <li><i class="fas fa-check-circle"></i> szkolić trenerów taniej,</li>
-                    <li><i class="fas fa-check-circle"></i> organizować egzaminy,</li>
-                    <li><i class="fas fa-check-circle"></i> rozwijać zawodników,</li>
-                    <li><i class="fas fa-check-circle"></i> zdobywać sponsorów,</li>
-                    <li><i class="fas fa-check-circle"></i> korzystać z promocji ogólnopolskiej,</li>
-                    <li><i class="fas fa-check-circle"></i> rozwijać współpracę ze szkołami,</li>
-                    <li><i class="fas fa-check-circle"></i> korzystać z doświadczenia zespołu PSBO.</li>
-                </ul>
-                <p>Naszym celem jest długoterminowy rozwój klubów partnerskich oraz budowa najsilniejszej sieci współpracujących klubów sportów walki w Polsce.</p>
-            </div>
-
+<!--            <div class="gallery-row gallery-row-2">-->
+<!--                <div class="gallery-box" data-event="zgrupowanie-instruktorskie" data-title="Zgrupowanie instruktorskie - Mazury" data-images="assets/images/juia.jpg,assets/images/krystian.jpg,assets/images/jacek.jpg">-->
+<!--                    <img src="assets/images/team/juia.jpg" alt="Zdjęcie ze zgrupowania instruktorskiego na Mazurach">-->
+<!--                    <div class="gallery-box-overlay">-->
+<!--                        <h2>Zgrupowanie instruktorskie - Mazury</h2>-->
+<!--                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="gallery-box" data-event="kolonia-ustka" data-title="Letnia kolonia sportowa - Ustka" data-images="assets/images/majka.jpg,assets/images/juia.jpg,assets/images/monika.png">-->
+<!--                    <img src="assets/images/team/majka.jpg" alt="Zdjęcie z letniej kolonii sportowej w Ustce">-->
+<!--                    <div class="gallery-box-overlay">-->
+<!--                        <h2>Letnia kolonia - Ustka</h2>-->
+<!--                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="gallery-box" data-event="wyjazd-turniej-miedzynarodowy" data-title="Wyjazd na turniej międzynarodowy - Karpacz" data-images="assets/images/monika.png,assets/images/jacek.jpg,assets/images/krystian.jpg">-->
+<!--                    <img src="assets/images/team/monika.png" alt="Zdjęcie z wyjazdu na turniej międzynarodowy w Karpaczu">-->
+<!--                    <div class="gallery-box-overlay">-->
+<!--                        <h2>Turniej międzynarodowy - Karpacz</h2>-->
+<!--                        <span class="gallery-view-more"><i class="fa fa-images"></i> Zobacz galerię</span>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
         </section>
+
+        <div id="galleryModal" class="gallery-modal">
+            <div class="gallery-modal-content">
+                <div class="gallery-modal-header">
+                    <h3 class="gallery-modal-title"></h3>
+                    <span class="gallery-modal-count"></span>
+                </div>
+                <button class="gallery-modal-close" aria-label="Zamknij galerię"><i class="fa fa-times"></i></button>
+                <div class="gallery-modal-grid"></div>
+            </div>
+        </div>
+
+        <div id="galleryLightbox" class="gallery-lightbox">
+            <button class="gallery-lightbox-close" aria-label="Zamknij podgląd"><i class="fa fa-times"></i></button>
+            <button class="gallery-lightbox-nav gallery-lightbox-prev" aria-label="Poprzednie zdjęcie"><i class="fa fa-chevron-left"></i></button>
+            <div class="gallery-lightbox-stage">
+                <img class="gallery-lightbox-image" src="" alt="Zdjęcie z wydarzenia">
+            </div>
+            <button class="gallery-lightbox-nav gallery-lightbox-next" aria-label="Następne zdjęcie"><i class="fa fa-chevron-right"></i></button>
+            <div class="gallery-lightbox-counter"></div>
+        </div>
+
         <section id="map-section" class="section-block-padding">
             <h1 class="section-heading">Nasza Lokalizacja</h1>
             <div class="map-container">
@@ -387,10 +240,8 @@
             <ul class="d-flex">
                 <li><a href="#home">Strona główna</a></li>
                 <li><a href="#about-section">Zespół</a></li>
-                <!-- <li><a href="#our-mission">Nasza misja</a></li> -->
-                <!-- <li><a href="#cooperation-section">Współpraca</a></li> -->
-                <li><a href="#partner-program-section">Program Partnerski</a></li>
-<!--                <li><a href="#gallery-section">Płatności</a></li>-->
+                <li><a href="partnerstwo.html">Nasza misja</a></li>
+                <li><a href="https://google.pl" target="_blank" rel="noopener">Sklep</a></li>
                 <li><a href="#contact-section">Kontakt</a></li>
             </ul>
 
@@ -409,7 +260,7 @@
 <!--                    <i class="fa  fa-linkedin"></i>-->
 <!--                </a>-->
 <!--                <a href="https://t.me/WebWithAman" target="_blank">-->
-<!--                    <i class="fa fa-whatsapp"></i>-->
+<!--                    <i class="fa  fa-whatsapp"></i>-->
 <!--                </a>-->
 
             </div>

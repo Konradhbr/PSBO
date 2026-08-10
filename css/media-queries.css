@@ -285,6 +285,75 @@
         gap: 3rem;
     }
 
+    .nav-dropdown .dropdown-menu {
+        position: static;
+        transform: none;
+        min-width: 28rem;
+        max-width: 90vw;
+        max-height: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        padding: 0 1rem;
+        margin-top: 0;
+        overflow: hidden;
+        transition: max-height .4s ease, padding .4s ease, margin .4s ease;
+    }
+
+    .nav-dropdown.active .dropdown-menu {
+        max-height: 60rem;
+        padding: 1rem;
+        margin-top: 1.6rem;
+    }
+
+    .nav-dropdown .dropdown-menu li a {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .gallery-modal-content {
+        padding: 2.4rem 1.5rem;
+    }
+
+    .gallery-modal-header {
+        margin-bottom: 2rem;
+    }
+
+    .gallery-modal-grid {
+        grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+        gap: 1rem;
+    }
+
+    .gallery-modal-title {
+        font-size: 1.9rem;
+    }
+
+    .gallery-lightbox-nav {
+        width: 4rem;
+        height: 4rem;
+        font-size: 1.4rem;
+    }
+
+    .gallery-lightbox-prev {
+        left: 1rem;
+    }
+
+    .gallery-lightbox-next {
+        right: 1rem;
+    }
+
+    .gallery-lightbox-close {
+        top: 1.5rem;
+        right: 1.5rem;
+        width: 3.8rem;
+        height: 3.8rem;
+    }
+
+    .gallery-lightbox-counter {
+        bottom: 1.5rem;
+        font-size: 1.1rem;
+    }
+
 
     .training-boxes-container,
     .offer-boxes-container,
@@ -369,6 +438,16 @@
         grid-column: initial;
     }
 
+    .gallery-modal-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: .8rem;
+    }
+
+    .gallery-modal-header {
+        flex-direction: column;
+        gap: .5rem;
+    }
+
 }
 
 @media only screen and (max-width:550px) and (min-height:900px) {
@@ -443,6 +522,14 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+    }
+
+    header.page-header {
+        min-height: auto;
+        height: auto;
+        background-image: none;
+        background-color: var(--black);
+        background-attachment: initial;
     }
 
     .pricing-box,
