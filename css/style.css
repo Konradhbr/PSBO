@@ -60,6 +60,7 @@ body {
 
     --navy: #0B1F3A;
     --navy-light: #132F52;
+    --blue-calm: #7ea8dd;
 
     --red: #D62828;
     --red-light: #E63946;
@@ -91,6 +92,7 @@ a {
     text-decoration: none;
     display: inline-block;
     transition: all .3s linear;
+    color: var(--blue-calm);
 }
 
 li {
@@ -225,7 +227,7 @@ nav {
 .logo-box img {
     height: 8rem;
     width: auto;
-    filter: contrast(0.6) saturate(6);
+    margin-right: 12px;
 }
 
 .logo-box a {
@@ -233,7 +235,7 @@ nav {
 }
 
 .logo-box h2 {
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     margin-left: .7rem;
     color: var(--white);
     -webkit-text-stroke: 0.5px var(--red-light)
@@ -243,11 +245,11 @@ nav {
    Nav Links
 **********************************************************/
 .nav-links ul {
-    gap: 2.5rem;
+    gap: 1.8rem;
 }
 
 .nav-links ul li a {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 500;
     letter-spacing: 1.1px;
     color: var(--pure-white);
@@ -271,6 +273,7 @@ nav {
 .nav-dropdown .dropdown-toggle {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .6rem;
 }
 
@@ -551,7 +554,7 @@ nav {
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 3rem;
-    color: var(--red);
+    color: var(--blue-calm);
 }
 
 .program-page-section .program-intro {
@@ -579,7 +582,7 @@ nav {
 .program-page-section .program-highlight {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--red-light);
+    color: var(--blue-calm);
     margin-bottom: 1rem;
 }
 

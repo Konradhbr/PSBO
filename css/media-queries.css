@@ -166,7 +166,7 @@
     }
 
     .nav-links ul li a {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
     }
 
     .training-box {
@@ -304,6 +304,7 @@
         max-height: 60rem;
         padding: 1rem;
         margin-top: 1.6rem;
+        transform: translate(0%, 0);
     }
 
     .nav-dropdown .dropdown-menu li a {
@@ -590,6 +591,61 @@
 
 
 
+
+/* Ensure logo and title stay on one line on small screens */
+@media only screen and (max-width:768px) {
+    /* prevent nav items from wrapping */
+    nav.d-flex {
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: .6rem;
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+        flex: 1 1 auto; /* allow shrinking if needed */
+    }
+
+    .logo-box img {
+        height: 3.8rem; /* slightly smaller logo */
+        width: auto;
+        flex: 0 0 auto;
+    }
+
+    .logo-box h2 {
+        font-size: 1.6rem; /* smaller title */
+        display: inline-block;
+        margin: 0;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: calc(100% - 6.5rem); /* leave space for hamburger */
+    }
+
+    .logo-box h2 br {
+        display: none; /* remove forced line break */
+    }
+
+    /* ensure hamburger stays on the same line and aligned right */
+    .mobile-toggle-btn {
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        margin-left: .6rem;
+        z-index: 6;
+    }
+}
+
+/* Further tweak for very small screens */
+@media only screen and (max-width:400px) {
+    .logo-box img {
+        height: 3.2rem;
+    }
+    .logo-box h2 {
+        font-size: 1.2rem;
+    }
+}
 
 /*****************************************************
      Media Queries End
