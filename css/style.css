@@ -122,8 +122,10 @@ button {
     padding: 1.2rem 2.2rem;
     text-transform: uppercase;
     color: var(--white);
-    background-color: transparent; /* Ensure background is transparent */
-    display: inline-block; /* Make it behave like a block for padding */
+    background-color: transparent;
+    /* Ensure background is transparent */
+    display: inline-block;
+    /* Make it behave like a block for padding */
 }
 
 .transparent-btn:hover {
@@ -183,14 +185,14 @@ p {
 /**********************************************************
     Header Start
 **********************************************************/
-header{
+header {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(-219deg,
-    rgba(13, 13, 13, 0.85) 20%,
-    rgba(11, 31, 58, 0.75) 60%,
-    rgba(13, 13, 13, 0.4) 100%),
-    url("../assets/images/hero-1.jpg");
+            rgba(13, 13, 13, 0.85) 20%,
+            rgba(11, 31, 58, 0.75) 60%,
+            rgba(13, 13, 13, 0.4) 100%),
+        url("../assets/images/hero-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -343,6 +345,7 @@ nav {
 }
 
 @media (hover:hover) {
+
     .nav-dropdown:hover .dropdown-menu,
     .nav-dropdown.active .dropdown-menu {
         opacity: 1;
@@ -367,6 +370,7 @@ nav {
 .nav-dropdown.active .dropdown-toggle i {
     transform: rotate(180deg);
 }
+
 /**********************************************************
    Nav Dropdown (Nasza misja) End
 **********************************************************/
@@ -445,8 +449,8 @@ nav {
 }
 
 .training-box:last-child {
-    background-image: linear-gradient(rgba(13,13,13,0.4), rgba(13,13,13,0.6)),
-    url("../assets/images/hero-card-2.jpg");
+    background-image: linear-gradient(rgba(13, 13, 13, 0.4), rgba(13, 13, 13, 0.6)),
+        url("../assets/images/hero-card-2.jpg");
 }
 
 .training-box h2,
@@ -483,26 +487,36 @@ nav {
 **********************************************************/
 .offer-boxes-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr)); /* Responsive 3-column grid */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /* Responsive 3-column grid */
     gap: 5rem;
-    justify-items: center; /* Center items within their grid cells */
+    justify-items: center;
+    /* Center items within their grid cells */
 }
 
 .offer-box {
     /* flex: 0 0 auto; Removed flex properties as we are using grid */
-    width: 30rem; /* Set a fixed width for the offer box */
+    width: 30rem;
+    /* Set a fixed width for the offer box */
     text-align: center;
-    padding: 2rem; /* Add some padding inside the box */
-    border: 1px solid var(--gray); /* Optional: add a border for visual separation */
-    border-radius: 8px; /* Optional: rounded corners */
+    padding: 2rem;
+    /* Add some padding inside the box */
+    border: 1px solid var(--gray);
+    /* Optional: add a border for visual separation */
+    border-radius: 8px;
+    /* Optional: rounded corners */
     /* margin-bottom: 2rem; Removed margin-bottom as gap handles spacing */
 }
 
 .offer-box img {
-    width: 20rem; /* Set a fixed width for the image */
-    height: 26rem; /* Set a fixed height for the image */
-    border-radius: 8px; /* Added delicate rounded corners */
-    object-fit: cover; /* Ensure the entire image is visible */
+    width: 20rem;
+    /* Set a fixed width for the image */
+    height: 26rem;
+    /* Set a fixed height for the image */
+    border-radius: 8px;
+    /* Added delicate rounded corners */
+    object-fit: cover;
+    /* Ensure the entire image is visible */
     margin-bottom: 2rem;
     transition: all .3s linear;
     cursor: pointer;
@@ -573,7 +587,8 @@ nav {
     line-height: 1.8;
     margin-bottom: 2rem;
     color: var(--white);
-    text-transform: none; /* Override uppercase for better readability */
+    text-transform: none;
+    /* Override uppercase for better readability */
     max-width: 90rem;
     margin-left: auto;
     margin-right: auto;
@@ -609,8 +624,10 @@ nav {
     line-height: 1.8;
     margin-bottom: 0.8rem;
     color: var(--white);
-    text-transform: none; /* Override uppercase for better readability */
-    padding-left: 3.5rem; /* Increased padding for icon */
+    text-transform: none;
+    /* Override uppercase for better readability */
+    padding-left: 3.5rem;
+    /* Increased padding for icon */
     position: relative;
 }
 
@@ -653,7 +670,8 @@ nav {
 .program-page-section .cost-section p {
     font-size: 1.6rem;
     margin-bottom: 1rem;
-    text-transform: none; /* Override uppercase for better readability */
+    text-transform: none;
+    /* Override uppercase for better readability */
 }
 
 .program-page-section .cost-section strong {
@@ -748,7 +766,8 @@ nav {
     font-size: 1.6rem;
     line-height: 1.8;
     margin-bottom: 1rem;
-    text-transform: none; /* Override uppercase for better readability */
+    text-transform: none;
+    /* Override uppercase for better readability */
     position: relative;
     z-index: 1;
 }
@@ -783,30 +802,442 @@ nav {
 
 
 /**********************************************************
-    Google Map Section Start
+    Poland Map Section Start
 **********************************************************/
 #map-section {
     text-align: center;
-    padding-top: 5rem; /* Add some padding to separate from previous section */
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background: radial-gradient(circle at 50% 30%, rgba(19, 47, 82, 0.25) 0%, rgba(13, 13, 13, 0.95) 75%);
+    position: relative;
+    overflow: hidden;
 }
 
 #map-section .section-heading {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
-.map-container {
-    max-width: 100rem; /* Limit the width of the map container */
-    margin: 0 auto; /* Center the map container */
-    border-radius: 8px; /* Add some rounded corners to the map */
-    overflow: hidden; /* Hide any overflow from rounded corners */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+#map-section .section-sub-heading {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--blue-calm);
+    max-width: 90rem;
+    margin: 0 auto 4.5rem;
+    line-height: 1.6;
+    text-transform: none;
 }
 
-.map-container iframe {
-    border-radius: 8px; /* Apply border-radius to the iframe as well */
+.poland-map-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: left;
 }
+
+.poland-map-visual {
+    position: relative;
+    background: linear-gradient(145deg, rgba(20, 24, 33, 0.9), rgba(12, 14, 18, 0.95));
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.poland-svg-map {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.7));
+}
+
+.voivodeship-path {
+    fill: #191e26;
+    stroke: rgba(255, 255, 255, 0.12);
+    stroke-width: 1.4;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    cursor: pointer;
+}
+
+.voivodeship-path:hover {
+    fill: #223249;
+    stroke: var(--blue-calm);
+    stroke-width: 2;
+    filter: drop-shadow(0 0 12px rgba(126, 168, 221, 0.5));
+}
+
+.active-voivodeship.region-mazowieckie {
+    fill: url(#grad-active-mz);
+    stroke: #ff5e6c;
+    stroke-width: 2.4;
+    filter: drop-shadow(0 0 16px rgba(230, 57, 70, 0.6));
+}
+
+.active-voivodeship.region-lubelskie {
+    fill: url(#grad-active-lu);
+    stroke: #ff4050;
+    stroke-width: 2.4;
+    filter: drop-shadow(0 0 16px rgba(214, 40, 40, 0.6));
+}
+
+.active-voivodeship:hover {
+    filter: drop-shadow(0 0 24px rgba(230, 57, 70, 0.95));
+    stroke-width: 3.2;
+}
+
+/* Markers & Pulsing points */
+.hub-pulse {
+    fill: rgba(255, 255, 255, 0.2);
+    stroke: #ffffff;
+    stroke-width: 1.5;
+    animation: hubPulseAnim 2.2s infinite ease-out;
+    transform-origin: center;
+}
+
+@keyframes hubPulseAnim {
+    0% {
+        r: 5;
+        opacity: 1;
+    }
+    100% {
+        r: 22;
+        opacity: 0;
+    }
+}
+
+.hub-center {
+    fill: #ffffff;
+    stroke: var(--red);
+    stroke-width: 2;
+    filter: drop-shadow(0 0 6px #ffffff);
+}
+
+.hub-label {
+    font-family: var(--font-family-1);
+    font-size: 1.3rem;
+    font-weight: 700;
+    fill: #ffffff;
+    letter-spacing: 1px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9));
+}
+
+.hub-city {
+    font-family: var(--font-family-1);
+    font-size: 1.1rem;
+    font-weight: 500;
+    fill: #ffccd0;
+    letter-spacing: 0.8px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.9));
+}
+
+/* Map legend */
+.map-legend {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 1.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.map-legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--white);
+    text-transform: none;
+}
+
+.legend-color-dot {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 4px;
+}
+
+.legend-color-dot.active-mz {
+    background: linear-gradient(135deg, #E63946, #9E131E);
+    box-shadow: 0 0 8px rgba(230, 57, 70, 0.6);
+}
+
+.legend-color-dot.active-lu {
+    background: linear-gradient(135deg, #D62828, #801018);
+    box-shadow: 0 0 8px rgba(214, 40, 40, 0.6);
+}
+
+.legend-color-dot.other {
+    background-color: #191e26;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Region info cards */
+.region-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.region-card {
+    background: linear-gradient(145deg, #1A1A1A, #121212);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 4px solid var(--red);
+    border-radius: 14px;
+    padding: 2.2rem 2.4rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.region-card.highlighted {
+    border-color: rgba(255, 255, 255, 0.25);
+    border-left-color: var(--red-light);
+    box-shadow: 0 15px 40px rgba(214, 40, 40, 0.3);
+    transform: translateX(6px);
+}
+
+.region-card:hover {
+    transform: translateX(6px);
+    border-color: rgba(255, 255, 255, 0.2);
+    border-left-color: var(--red-light);
+    box-shadow: 0 15px 40px rgba(214, 40, 40, 0.2);
+}
+
+.region-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.region-card-title {
+    font-size: 2rem;
+    color: var(--pure-white);
+    margin: 0;
+}
+
+.region-badge {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+    background-color: rgba(214, 40, 40, 0.18);
+    color: var(--red-light);
+    border: 1px solid rgba(214, 40, 40, 0.4);
+}
+
+.region-card p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: var(--white);
+    text-transform: none;
+    margin-bottom: 1.2rem;
+}
+
+.region-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.region-meta li {
+    font-size: 1.3rem;
+    color: var(--blue-calm);
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    text-transform: none;
+}
+
+.region-meta li i {
+    color: var(--red);
+    font-size: 1.4rem;
+}
+
+.region-meta li strong {
+    color: var(--pure-white);
+}
+
+.region-meta li a {
+    color: var(--white);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.region-meta li a:hover {
+    color: var(--red);
+}
+
 /**********************************************************
-    Google Map Section End
+    Poland Map Section End
+**********************************************************/
+
+/**********************************************************
+    Open Mosaic Gallery (Bento Grid) Start
+**********************************************************/
+.open-gallery-section {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+
+.open-gallery-section .section-heading {
+    margin-bottom: 1rem;
+}
+
+.open-gallery-section .section-sub-heading {
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--blue-calm);
+    margin-bottom: 3.5rem;
+    text-align: center;
+}
+
+.mosaic-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 24rem;
+    gap: 2rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.mosaic-item {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--black-light);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+.mosaic-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Bento size variants */
+.mosaic-item--lg {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.mosaic-item--tall {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.mosaic-item--wide {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.mosaic-item--sm {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* Hover overlay */
+.mosaic-item-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.05) 0%,
+        rgba(11, 31, 58, 0.4) 50%,
+        rgba(13, 13, 13, 0.88) 100%
+    );
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2.2rem;
+    transition: opacity 0.35s ease, backdrop-filter 0.35s ease;
+    backdrop-filter: blur(0px);
+}
+
+.mosaic-item-badge {
+    align-self: flex-start;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+    transform: translateY(8px);
+    transition: transform 0.35s ease;
+}
+
+.mosaic-item-caption {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--pure-white);
+    line-height: 1.4;
+    text-transform: none;
+    transform: translateY(8px);
+    transition: transform 0.35s ease 0.05s;
+}
+
+.mosaic-item-zoom {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    display: grid;
+    place-items: center;
+    color: var(--pure-white);
+    font-size: 1.4rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (hover: hover) {
+    .mosaic-item:hover {
+        transform: translateY(-6px);
+        border-color: rgba(255, 255, 255, 0.25);
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6), 0 0 25px rgba(214, 40, 40, 0.25);
+    }
+
+    .mosaic-item:hover img {
+        transform: scale(1.07);
+    }
+
+    .mosaic-item:hover .mosaic-item-overlay {
+        opacity: 1;
+        backdrop-filter: blur(2px);
+    }
+
+    .mosaic-item:hover .mosaic-item-badge,
+    .mosaic-item:hover .mosaic-item-caption {
+        transform: translateY(0);
+    }
+
+    .mosaic-item:hover .mosaic-item-zoom {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/**********************************************************
+    Open Mosaic Gallery (Bento Grid) End
 **********************************************************/
 
 
@@ -849,10 +1280,8 @@ nav {
     top: 0;
     left: 0;
     background: var(--black);
-    background: linear-gradient(
-            rgba(13, 13, 13, 0.6),
-            rgb(71 104 156 / 0.6)
-    );
+    background: linear-gradient(rgba(13, 13, 13, 0.6),
+            rgb(71 104 156 / 0.6));
     display: flex;
     align-items: flex-end;
     padding: 5rem;
@@ -1027,6 +1456,7 @@ nav {
         transform: scale(1.08);
     }
 }
+
 /**********************************************************
     Gallery Modal End
 **********************************************************/
@@ -1146,6 +1576,7 @@ nav {
     padding: .6rem 1.6rem;
     border-radius: 50px;
 }
+
 /**********************************************************
     Gallery Lightbox End
 **********************************************************/
@@ -1304,10 +1735,10 @@ nav {
 .footer-banner {
     height: 60rem;
     background-image: linear-gradient(-219deg,
-    rgba(13,13,13,0.85),
-    rgba(11,31,58,0.7),
-    rgba(13,13,13,0.4)),
-    url("../assets/images/footer-banner.jpg");
+            rgba(13, 13, 13, 0.85),
+            rgba(11, 31, 58, 0.7),
+            rgba(13, 13, 13, 0.4)),
+        url("../assets/images/footer-banner.jpg");
     background-size: cover;
     background-position: top;
     margin-top: 5rem;
@@ -1363,7 +1794,8 @@ nav {
     font-size: 1.5rem;
     letter-spacing: 1px;
     margin-bottom: .8rem;
-    color: var(--red); /* Changed to red */
+    color: var(--red);
+    /* Changed to red */
 }
 
 .contact-info p {
@@ -1373,7 +1805,9 @@ nav {
 }
 
 .contact-info p a {
-    color: var(--red); /* Changed to red */
+    color: var(--white);
+    text-decoration: underline;
+    /* Changed to red */
 }
 
 /**********************************************************
