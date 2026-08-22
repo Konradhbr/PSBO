@@ -1,7 +1,7 @@
 /**********************************************************
   Add Google Fonts
 **********************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,400;1,300;1,400&family=Roboto:ital@0;1');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,400;1,300;1,400&family=Roboto:ital@0;1");
 
 
 /**********************************************************
@@ -47,7 +47,6 @@ body {
 **********************************************************/
 
 
-
 /**********************************************************
    Variales Start
 **********************************************************/
@@ -67,7 +66,7 @@ body {
 
     --gray: #E5E7EB;
 
-    --font-family-1: 'Oswald', sans-serif;
+    --font-family-1: "Oswald", sans-serif;
 }
 
 /**********************************************************
@@ -155,17 +154,15 @@ h2 {
 }
 
 p {
-    line-height: 22px;
+    line-height: 30px;
     font-weight: 400;
     font-size: 1.3rem;
-
 }
 
 
 /**********************************************************
     Common Properties to Frequently Used Elements End
 **********************************************************/
-
 
 
 /***********************************************************************************************
@@ -189,10 +186,10 @@ header {
     width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(-219deg,
-            rgba(13, 13, 13, 0.85) 20%,
-            rgba(11, 31, 58, 0.75) 60%,
-            rgba(13, 13, 13, 0.4) 100%),
-        url("../assets/images/hero-1.jpg");
+    rgba(13, 13, 13, 0.85) 20%,
+    rgba(11, 31, 58, 0.75) 60%,
+    rgba(13, 13, 13, 0.4) 100%),
+    url("../assets/images/hero-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -257,7 +254,7 @@ nav {
     color: var(--pure-white);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
 
     .nav-links ul li a:hover,
     .nav-links ul li:first-child a {
@@ -330,7 +327,7 @@ nav {
     transition: all .25s ease;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .nav-dropdown .dropdown-menu li a:hover {
         background-color: rgba(214, 40, 40, 0.12);
         border-left-color: var(--red);
@@ -344,7 +341,7 @@ nav {
     border-left-color: var(--red);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
 
     .nav-dropdown:hover .dropdown-menu,
     .nav-dropdown.active .dropdown-menu {
@@ -441,16 +438,19 @@ nav {
 .training-box {
     flex: 1;
     min-height: 35rem;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.434)), url("../assets/images/hero-card-1.jpg");
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.233),
+            rgba(0, 0, 0, 0.434)
+    );
     padding-inline: 10%;
     text-align: center;
 }
 
 .training-box:last-child {
-    background-image: linear-gradient(rgba(13, 13, 13, 0.4), rgba(13, 13, 13, 0.6)),
-        url("../assets/images/hero-card-2.jpg");
+    background: linear-gradient(
+            rgba(13, 13, 13, 0.4),
+            rgba(13, 13, 13, 0.6)
+    );
 }
 
 .training-box h2,
@@ -471,7 +471,7 @@ nav {
 }
 
 
-@media (hover:hover) {
+@media (hover: hover) {
     .training-box .training-btn:hover {
         background-color: transparent;
     }
@@ -522,7 +522,7 @@ nav {
     cursor: pointer;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .offer-box img:hover {
         transform: scale(1.08);
     }
@@ -658,7 +658,7 @@ nav {
 }
 
 .program-page-section .cost-section::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -752,7 +752,7 @@ nav {
 }
 
 .program-page-section .program-summary::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -60px;
     right: -60px;
@@ -899,12 +899,12 @@ nav {
 
 @keyframes hubPulseAnim {
     0% {
-        r: 5;
+        r: 5px;
         opacity: 1;
     }
 
     100% {
-        r: 22;
+        r: 22px;
         opacity: 0;
     }
 }
@@ -1154,9 +1154,9 @@ nav {
     position: absolute;
     inset: 0;
     background: linear-gradient(180deg,
-            rgba(0, 0, 0, 0.05) 0%,
-            rgba(11, 31, 58, 0.4) 50%,
-            rgba(13, 13, 13, 0.88) 100%);
+    rgba(0, 0, 0, 0.05) 0%,
+    rgba(11, 31, 58, 0.4) 50%,
+    rgba(13, 13, 13, 0.88) 100%);
     opacity: 0;
     display: flex;
     flex-direction: column;
@@ -1280,7 +1280,7 @@ nav {
     left: 0;
     background: var(--black);
     background: linear-gradient(rgba(13, 13, 13, 0.6),
-            rgb(71 104 156 / 0.6));
+    rgb(71 104 156 / 0.6));
     display: flex;
     align-items: flex-end;
     padding: 5rem;
@@ -1288,8 +1288,8 @@ nav {
     transform: translateY(100%);
 }
 
-@media (hover:hover) {
-    .gallery-box:hover>.gallery-box-overlay {
+@media (hover: hover) {
+    .gallery-box:hover > .gallery-box-overlay {
         display: flex;
         align-items: center;
         transform: translateY(0%);
@@ -1401,7 +1401,7 @@ nav {
     z-index: 2;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .gallery-modal-close:hover {
         background-color: var(--red);
         transform: rotate(90deg);
@@ -1446,7 +1446,7 @@ nav {
     transition: opacity .3s ease;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .gallery-modal-grid figure:hover::after {
         opacity: 1;
     }
@@ -1526,7 +1526,7 @@ nav {
     z-index: 2;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .gallery-lightbox-close:hover {
         background-color: var(--red);
         transform: rotate(90deg);
@@ -1557,7 +1557,7 @@ nav {
     right: 2.5rem;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .gallery-lightbox-nav:hover {
         background-color: var(--red);
     }
@@ -1600,7 +1600,7 @@ nav {
     color: var(--white);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .pricing-box:hover {
         transform: translateY(-8px);
     }
@@ -1655,7 +1655,7 @@ nav {
     background-color: transparent;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .pricing-box .pricing-btn:hover {
         background-color: var(--white);
         color: var(--black);
@@ -1733,11 +1733,12 @@ nav {
 **********************************************************/
 .footer-banner {
     height: 60rem;
-    background-image: linear-gradient(-219deg,
+    background-image: linear-gradient(
+            -219deg,
             rgba(13, 13, 13, 0.85),
             rgba(11, 31, 58, 0.7),
-            rgba(13, 13, 13, 0.4)),
-        url("../assets/images/footer-banner.jpg");
+            rgba(13, 13, 13, 0.4)
+    );
     background-size: cover;
     background-position: top;
     margin-top: 5rem;
@@ -1782,7 +1783,7 @@ nav {
     transition: all .3s linear;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     .contact-box span:hover {
         color: var(--black);
         background-color: var(--white);
@@ -1840,7 +1841,7 @@ footer ul li a {
     color: var(--white);
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     footer ul li a:hover {
         color: var(--red);
     }
@@ -1865,7 +1866,7 @@ footer ul li a {
     transition: all .3s linear;
 }
 
-@media (hover:hover) {
+@media (hover: hover) {
     footer .social-media-icons a:hover {
         color: var(--black);
         background-color: var(--white);
