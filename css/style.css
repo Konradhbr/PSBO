@@ -635,7 +635,7 @@ nav {
 .program-page-section .feature-list li i {
     position: absolute;
     left: 0;
-    top: 0.2rem;
+    top: 0.5rem;
     font-size: 2rem;
     color: var(--white);
 }
