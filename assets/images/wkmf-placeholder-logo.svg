@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">WKMF placeholder logo</title>
+  <desc id="desc">Temporary placeholder logo for WKMF</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#132F52"/>
+      <stop offset="100%" stop-color="#D62828"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" rx="48" fill="url(#bg)"/>
+  <rect x="36" y="36" width="1128" height="528" rx="36" fill="none" stroke="#ffffff" stroke-opacity=".22" stroke-width="8"/>
+  <text x="600" y="250" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="106" font-weight="700" letter-spacing="4">WKMF</text>
+  <text x="600" y="330" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="600" letter-spacing="2">WORLD KRAV MAGA FEDERATION</text>
+  <text x="600" y="405" text-anchor="middle" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400" opacity=".92">PLACEHOLDER LOGO</text>
+</svg>
