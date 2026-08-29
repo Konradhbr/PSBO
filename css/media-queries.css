@@ -312,6 +312,38 @@
         font-size: 1.5rem;
     }
 
+    .seminar-section-nav {
+        position: sticky;
+        top: 7rem;
+        justify-content: flex-start;
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 1rem 1.2rem;
+        border-radius: 1.4rem;
+    }
+
+    .seminar-section-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .seminar-section-link {
+        flex: 0 0 auto;
+        font-size: 1rem;
+        padding: 0.8rem 1rem;
+    }
+
+    .seminar-hero-image {
+        max-width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .seminar-hero-image img {
+        padding: 0.6rem;
+    }
+
     .gallery-modal-content {
         padding: 2.4rem 1.5rem;
     }

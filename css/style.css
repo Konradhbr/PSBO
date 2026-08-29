@@ -36,6 +36,7 @@ html {
 
     overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-margin-top: 12rem;
 }
 
 body {
@@ -736,6 +737,172 @@ nav {
     color: var(--white);
 }
 
+.seminar-section-nav {
+    position: sticky;
+    top: 7rem;
+    z-index: 20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    margin: 0 auto 3rem;
+    background: rgba(13, 13, 13, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 999px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(8px);
+    max-width: 120rem;
+}
+
+.seminar-section-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid transparent;
+    color: var(--white);
+    font-size: 1.2rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    white-space: nowrap;
+}
+
+.seminar-section-link:hover,
+.seminar-section-link.active {
+    background: rgba(214, 40, 40, 0.14);
+    border-color: rgba(214, 40, 40, 0.5);
+    color: var(--white);
+}
+
+.seminar-list {
+    display: grid;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.seminar-card {
+    background: linear-gradient(145deg, rgba(26, 26, 26, 0.98), rgba(11, 31, 58, 0.8));
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: left;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.seminar-hero-image {
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 42rem;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto 2rem;
+    border-radius: 14px;
+    background: transparent;
+    padding: 0.6rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.04), 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.seminar-hero-image img {
+    display: block;
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.02);
+    object-position: center 26%;
+    transition: transform .35s ease, filter .35s ease;
+    filter: brightness(1.02) contrast(1.04);
+}
+
+.seminar-card:hover .seminar-hero-image img {
+    transform: scale(1.02);
+    filter: brightness(1.08);
+}
+
+.seminar-card-title {
+    font-size: 2.8rem;
+    color: var(--white);
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.seminar-card-subtitle {
+    font-size: 1.7rem;
+    color: var(--blue-calm);
+    margin-bottom: 2rem;
+    text-transform: none;
+}
+
+.seminar-content {
+    margin-bottom: 2.5rem;
+}
+
+.seminar-content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    text-transform: none;
+}
+
+.seminar-content strong {
+    color: var(--white);
+}
+
+.seminar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0 3rem;
+    background: rgba(245, 247, 250, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.seminar-table th,
+.seminar-table td {
+    padding: 1.5rem 1.2rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 1.5rem;
+    text-transform: none;
+}
+
+.seminar-table th {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--white);
+    font-weight: 600;
+}
+
+.seminar-table td {
+    color: var(--white);
+}
+
+.seminar-download {
+    margin-top: 1rem;
+}
+
+.seminar-full-program {
+    margin-top: 5rem;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(20, 20, 20, 0.95), rgba(11, 31, 58, 0.9));
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.seminar-full-program .program-sub-heading {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-size: 2.2rem;
+}
 
 .program-page-section .program-summary {
     background: linear-gradient(155deg, #232323, #141414 55%);

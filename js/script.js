@@ -66,6 +66,41 @@ document.addEventListener("click", function (e) {
     }
 });
 
+/****************************************************************
+  Seminar section navigation highlight
+****************************************************************/
+const seminarSectionLinks = document.querySelectorAll(".seminar-section-link");
+const seminarSections = document.querySelectorAll(".seminar-card[id]");
+
+if (seminarSectionLinks.length && seminarSections.length) {
+   const activeSeminarLink = function (id) {
+       seminarSectionLinks.forEach(function (link) {
+           const isActive = link.getAttribute("href") === "#" + id;
+           link.classList.toggle("active", isActive);
+       });
+   };
+
+   const observer = new IntersectionObserver(function (entries) {
+       const visibleEntries = entries.filter(function (entry) {
+           return entry.isIntersecting;
+       });
+
+       if (visibleEntries.length) {
+           visibleEntries.sort(function (a, b) {
+               return b.intersectionRatio - a.intersectionRatio;
+           });
+           activeSeminarLink(visibleEntries[0].target.id);
+       }
+   }, {
+       rootMargin: "-30% 0px -45% 0px",
+       threshold: [0.2, 0.4, 0.6]
+   });
+
+   seminarSections.forEach(function (section) {
+       observer.observe(section);
+   });
+}
+
 
 /****************************************************************
   Gallery Modal
